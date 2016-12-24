@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        es5 第二种场景
+    </title>
+</head>
+<body>
+<h1> 计数变量污染外部变量.html</h1>
+<script>
+    var string = 'hello world';
+    for (var i = 0; i < string.length; i++) {
+//       console.log(string[i])
+    }
+    console.log('循环结束');
+    console.log(i)
+
+
+</script>
+</body>
+</html>

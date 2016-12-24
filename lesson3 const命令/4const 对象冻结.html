@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4const 对象冻结.html</title>
+</head>
+<body>
+<!--<script>-->
+
+<!--const person = Object.freeze({});-->
+<!--person.name = 'xioaoMing';-->
+<!--person.age = 23;-->
+
+<!--alert(person.age);-->
+<!--console.log(person.name);-->
+<!--console.log(person);-->
+
+<!--//    person = {}// Err Identifier 'pi' has already been declared-->
+<!--</script>-->
+<script>
+
+    const person = Object.freeze({
+                name: 'xioaoMing',
+                age: 23
+            })
+
+
+
+    alert(person.age);
+    alert(person.name);
+    console.log(person);
+
+    //    person = {}// Err Identifier 'pi' has already been declared
+</script>
+</body>
+</html>

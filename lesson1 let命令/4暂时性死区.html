@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4暂时性死区.html.html</title>
+</head>
+<body>
+<!--<script>
+    {
+        console.log(a);/*a is not defined(…)*/
+        let  a = 100;
+        console.log(a);
+
+    }
+
+</script>-->
+<script>
+    var a = 10;
+    {
+        console.log(a);/*a is not defined(…)*/
+        let  a = 100;
+        console.log(a);
+
+    }
+
+</script>
+</body>
+</html>

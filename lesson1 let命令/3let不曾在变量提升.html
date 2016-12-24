@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3let不曾在变量提升.html.html</title>
+</head>
+<body>
+<script>
+
+    //ES-5
+    var a = [];
+    for (var i = 0; i < 10; i++) {
+        var num = i;
+        a[i] = function () {
+            console.log(num)
+        };
+    }
+    a[5]();//9
+
+    //ES-6
+    var fun = [];
+    for (var i = 0; i < 10; i++) {
+        let num = i;
+        fun[i] = function () {
+            console.log(num)
+        };
+    }
+    fun[5]();//5
+
+</script>
+</body>
+</html>

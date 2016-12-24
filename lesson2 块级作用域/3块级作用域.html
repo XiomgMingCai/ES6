@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3块级作用域.html</title>
+</head>
+<body>
+<script>
+    function fun() {
+        let num = 100;
+        if (1) {
+            let num = 200;
+        }
+        console.log('es 6 -->' + num)
+    }
+    fun();
+</script>
+<script>
+    function fun() {
+        var num = 100;
+        if (1) {
+            var num = 200;
+        }
+        console.log('es 5 -->' + num)
+    }
+    fun();
+</script>
+</body>
+</html>

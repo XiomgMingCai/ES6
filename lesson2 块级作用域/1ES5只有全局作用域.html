@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        es5 第一种场景
+    </title>
+</head>
+<body>
+<h1>内存变量会覆盖外外层变量</h1>
+<script>
+
+    var time = new Date()
+    function fun() {
+        console.log(time)
+        if (false) {
+            var time = 'hello world'
+        }
+    }
+    fun();//undefined
+    //第一种场景 >>内存变量可能会覆盖外层变量
+</script>
+</body>
+</html>
